@@ -1,0 +1,41 @@
+<!-- Include the snow flurry and jquery script along with jQuery in the document header-->
+
+<script>
+jQuery(document).ready(function($){
+$(document).snowFlurry({
+maxSize: 5,
+numberOfFlakes: 50,
+minSpeed: 10,
+maxSpeed: 15,
+color: '#fff',
+timeout: 0
+});
+});
+</script>
+
+<!--Add the following jQuery code in the footer of your HTML document right before the closing body tag-->
+
+<script>
+jQuery(document).ready(function($){
+$(document).snowFlurry({
+maxSize: 5,
+numberOfFlakes: 50,
+minSpeed: 10,
+maxSpeed: 15,
+color: '#fff',
+timeout: 0
+});
+});
+</script>
+
+<!-- Add the following CSS just before the closing head tag (or you can also add this CSS in your stylesheet without using the style tag)-->
+<style>
+.sf-snow-flake {
+position: fixed;
+top: -20px;
+z-index: 99999;
+}
+.sf-snow-anim {
+top: 110%;
+}
+</style>
